@@ -1,19 +1,7 @@
 <template>
   <div class="h-screen pb-14 bg-right bg-cover bg-home">
-	<div class="w-full container mx-auto p-6">
 
-		<div class="w-full flex items-center justify-between">
-			<a class="flex items-center text-green-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#">
-				 DAPP
-			</a>
-
-			<div class="flex w-1/2 justify-end content-center">
-        Network change here? Connect button right here?
-			</div>
-
-		</div>
-
-	</div>
+	  <mainHeader></mainHeader>
 
 	<!--Main-->
 	<div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
@@ -23,9 +11,9 @@
 			<h1 class="my-4 text-3xl md:text-5xl text-green-700 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">First DAPP that connects to your wallet!</h1>
 			<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">For now its just show you your BNB balance.</p>
 
-			<p class="text-green-500 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in">Connect to your wallet:</p>
-			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
-
+			<p class="text-green-500 font-bold pb-8 lg:pb-3 text-center md:text-left fade-in">Your BNB balance:</p>
+			<div class="flex w-full justify-center md:justify-start pb-3 lg:pb-0 fade-in">
+				kek
 			</div>
 
 		</div>
