@@ -7,7 +7,7 @@
 			</a>
 
 			<div class="flex w-1/2 justify-end content-center grid grid-flow-col gap-2">
-                <switchNetwork :data="networks" v-model="selectedNetwork" v-on:valueSelect="onValueSelect"></switchNetwork>
+                <switchNetwork/>
                 <connectButton/>
 			</div>
 
@@ -18,19 +18,14 @@
 
 <script>
 export default {
-  methods: {
-    onValueSelect(value) {
-      this.selectedNetwork = value;
-    }
-  },
-  data() {
-    return {
-      selectedNetwork: 'BSC Mainnet',
-      networks: [
-        'BSC Mainnet',
-        'BSC Testnet',
-      ]
-    }
+  // Fill the networks (shouldn't be in the component.)
+  async fetch() {
+    const networkList = [
+      {id: 0, name:'BSC Mainnet', network:'bscmain'},
+      {id: 1, name:'BSC Testnet', network:'bsctest'}
+    ];
+    this.$store.commit('networks/setNetwork', networkList[0]);
+    this.$store.commit('networks/setList', networkList);
   }
 }
 </script>
