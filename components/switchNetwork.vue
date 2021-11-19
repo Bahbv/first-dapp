@@ -5,7 +5,7 @@
       <span class="inline-block w-full rounded-md shadow-sm">
         <button type="button" @click="openDropdown" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label" class="cursor-pointer relative w-full rounded-md border border-gray-300 bg-white pl-3 pr-10 py-2 text-left focus:outline-none focus:shadow-outline-green focus:border-green-400 transition ease-in-out duration-150 sm:text-sm sm:leading-5">
           <div class="flex items-center space-x-3">
-            <img src="~/assets/img/network/bsc-mainnet.png" alt="" class="flex-shrink-0 h-6 w-6 rounded-full" />
+            <img :src="require(`~/assets/img/network/${network.img}`)" alt="" class="flex-shrink-0 h-6 w-6 rounded-full" />
             <span class="block truncate">
                {{ network.name }}
             </span>
@@ -24,7 +24,7 @@
 
           <li tabindex="0" @click="select(n)" id="listbox-item-0" role="option" v-for="n in networks" v-bind:key="n.id" class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9  cursor-pointer hover:text-white hover:bg-green-400 focus:outline-none focus:text-white focus:bg-green-400">
             <div class="flex items-center space-x-3">
-              <img src="~/assets/img/network/bsc-mainnet.png" alt="" class="flex-shrink-0 h-6 w-6 rounded-full" />
+              <img :src="require(`~/assets/img/network/${n.img}`)" alt="" class="flex-shrink-0 h-6 w-6 rounded-full" />
               <span class="block truncate" v-bind:class="{ 'font-normal' : !isSelected(n) , 'font-semibold' : isSelected(n)}">
                 {{ n.name }}
               </span>

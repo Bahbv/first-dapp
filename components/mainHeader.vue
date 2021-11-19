@@ -21,8 +21,8 @@ export default {
   // Fill the networks (shouldn't be in the component.)
   async fetch() {
     const networkList = [
-      {id: 0, name:'BSC Mainnet', network:'bscmain'},
-      {id: 1, name:'BSC Testnet', network:'bsctest'}
+      {id: 0, name:'BSC Mainnet', img:'bsc-mainnet.png'},
+      {id: 1, name:'BSC Testnet', img:'bsc-testnet.png'}
     ];
     this.$store.commit('networks/setNetwork', networkList[0]);
     this.$store.commit('networks/setList', networkList);
