@@ -1,4 +1,18 @@
 # web3
+First shot on a DAPP with Nuxtjs, tailwind and web3.js  
+The DAPP will be able to show BNB balance on Testnet and Mainnet and connection should be stored in the app state.
+
+## Todo
+- [x] Network select component
+- [x] Connect component
+- [ ] Dynamic image in network select
+- [ ] Link connect and network with state in vuex
+- [ ] add web3.js
+- [ ] Connect web3.js to state
+- [ ] Read BNB balance main net
+- [ ] Read BNB balance test net
+- [ ] Final styling
+- [ ] Q/A
 
 ## Build Setup
 
