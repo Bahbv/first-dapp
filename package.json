@@ -1,6 +1,6 @@
 {
-  "name": "web3",
-  "version": "1.0.0",
+  "name": "first-dapp",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -11,7 +11,8 @@
   "dependencies": {
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
-    "vue-click-outside": "^1.1.0"
+    "vue-click-outside": "^1.1.0",
+    "web3": "^1.6.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",
