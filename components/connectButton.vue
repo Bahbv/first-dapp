@@ -5,21 +5,25 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  data() {
-    return {
-      'isConnected' : false
-    }
-  },
   methods: {
     buttonClicked() {
-        if (this.isConnected == false){
-            this.isConnected = true;
+        if ( this.$store.state.connection.connected == false){
+            // TODO Connect here..
+            this.$store.commit('connection/isConnected', true);
         } else {
-            this.isConnected = false;
+           // TODO Disconnect here..
+           this.$store.commit('connection/isConnected', false);
         }
     }
-  }
+  },
+  // Map the state
+  computed: {
+    ...mapState({
+      isConnected: state => state.connection.connected,
+    })
+  },
 }
 </script>
 

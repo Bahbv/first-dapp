@@ -18,7 +18,8 @@
 
 <script>
 export default {
-  // Fill the networks (shouldn't be in the component.)
+  // Fill the networks
+  // FIXME:Shouldt be in the component i think..?
   async fetch() {
     const networkList = [
       {id: 0, name:'BSC Mainnet', img:'bsc-mainnet.png'},

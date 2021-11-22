@@ -7,7 +7,7 @@ The DAPP will be able to show BNB balance on Testnet and Mainnet and connection 
 - [x] Connect component
 - [x] Dynamic image in network select
 - [x] Link network with state in vuex
-- [ ] Link Connect with state
+- [x] Link Connect with state
 - [ ] add web3.js
 - [ ] Connect web3.js to state
 - [ ] Read BNB balance main net
